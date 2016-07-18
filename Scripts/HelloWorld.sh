@@ -11,7 +11,19 @@
 echo "Hello, soon-to-be-CI-user!"
 echo "We'll need git to get some more scripts.."
 
+## Install git
 # Get the latest info about packages
 apt-get update
 # ... and install git.
 apt-get install git
+
+## synch this repo to get all the scripts we need.
+# create new git local repo
+git init
+# get this repo
+git clone https://github.com/R01Ne/AutoCI.git
+cd ./AutoCI/Scripts/
+chmod +x MasterSequence.sh
+./MasterSequence.sh
+
+
