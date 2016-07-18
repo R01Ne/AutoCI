@@ -13,4 +13,5 @@ echo "We'll need git to get some more scripts.."
 
 # Get the latest info about packages
 apt-get update
+# ... and install git.
 apt get install git
