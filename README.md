@@ -16,9 +16,16 @@ GitLab keeps track of changes of your code. If you screw something up, you can r
 
 Jenkins compiles and tests code.
 
+### * Nexus
+
+Keeps track of build artifacts
+
 ## Integrations
 
 ### * Gitlab <-> Jenkins
 
-Jenkins will build when code is altered in GitLab.
+Jenkins will build when code is altered in GitLab, including change information etc.
 
+### * Nexus <-> Jenkins
+
+Nexus will archive artifacts from Jenkins
