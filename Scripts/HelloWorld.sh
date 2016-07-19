@@ -1,3 +1,4 @@
+#!/bin/bash
 # This is the first file that should be downloaded and run on the target server. 
 # Initially, I have a ubuntu server installed on virtualBox, so the first version 
 # of this file is just to find out how to download this file and execute it.  
@@ -22,8 +23,7 @@ sudo apt-get install git
 git init
 # get this repo
 git clone https://github.com/R01Ne/AutoCI.git
-cd ./AutoCI/Scripts/
-chmod +x MasterSequence.sh
-./MasterSequence.sh
+
+source ./AutoCI/Scripts/Install.sh
 
 
