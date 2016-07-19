@@ -7,4 +7,11 @@ sudo sh -c 'echo deb http://pkg.jenkins-ci.org/debian-stable binary/ > /etc/apt/
 sudo apt-get update
 sudo apt-get install jenkins
 
+# The install will fail as port 8080 is used.
+# changing configuration..
+sudo sed -i 's/HTTP_PORT=8080/HTTP_PORT=8081/g' /etc/default/jenkins
+
+#restart jenkins
+sudo /etc/init.d/jenkins start
+
 echo "Jenkins installed!" 
