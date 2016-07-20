@@ -5,7 +5,7 @@ echo "Installing Jenkins..."
 wget -q -O - https://jenkins-ci.org/debian/jenkins-ci.org.key | sudo apt-key add -
 sudo sh -c 'echo deb http://pkg.jenkins-ci.org/debian-stable binary/ > /etc/apt/sources.list.d/jenkins.list'
 sudo apt-get update
-sudo apt-get install jenkins
+sudo apt-get -y install jenkins
 
 # The install will fail as port 8080 is used.
 # changing configuration..
