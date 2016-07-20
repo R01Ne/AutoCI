@@ -23,7 +23,5 @@ sudo apt-get -y install git
 git init
 # get this repo
 git clone https://github.com/R01Ne/AutoCI.git
-
-source ./AutoCI/Scripts/Install.sh
-
-
+cd ./AutoCI/Scripts/
+bash ./Install.sh
