@@ -5,3 +5,6 @@ source ./InstallGitLab.sh
 # Install Jenkins for CI
 source ./InstallJenkins.sh
 
+# Install Archiva
+source ./InstallArchiva.sh
+
