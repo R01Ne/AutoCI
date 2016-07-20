@@ -16,7 +16,7 @@ echo "We'll need git to get some more scripts.."
 # Get the latest info about packages
 sudo apt-get update
 # ... and install git.
-sudo apt-get install git
+sudo apt-get -y install git
 
 ## synch this repo to get all the scripts we need.
 # create new git local repo
