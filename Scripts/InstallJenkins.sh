@@ -11,6 +11,9 @@ sudo apt-get -y install jenkins
 # changing configuration..
 sudo sed -i 's/HTTP_PORT=8080/HTTP_PORT=8081/g' /etc/default/jenkins
 
+# We'll use the unix user db to access jenkins during install, so we add jenkinsuser to shadow
+sudo adduser jenkins shadow
+
 #restart jenkins
 sudo /etc/init.d/jenkins start
 
